@@ -13,7 +13,11 @@ import torch.nn.functional as F
 import imageio
 
 import os
-from skimage.draw import circle
+import skimage
+if skimage.__version__ >= "0.19":
+    from skimage.draw import disk as circle
+else:
+    from skimage.draw import circle
 
 import matplotlib.pyplot as plt
 import collections
