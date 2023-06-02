@@ -1,9 +1,14 @@
 # Motion Representations for Articulated Animation
 
-@xvdp modifications: 
+## @xvdp modifications: 
 * fixed yaml.load() and skimage.draw.circle for sckit-learn >= 0.19 and yaml >= 6.0
 * ommited lfs references. checkpoints need to be downloaded from original github
 * tested on example from the web. Verdicts - does not generalize well, changing background, hairstylye, size, breaks results. example in .ipynb
+
+### Question. how can one generalize these? 
+* Generating a stronger semantic map that better tags human vs. environment, regardless of the peculiarities of the human, the camera or environment?
+
+
 ---
 
 This repository contains the source code for the CVPR'2021 paper [Motion Representations for Articulated Animation](https://arxiv.org/abs/2104.11280) by [Aliaksandr Siarohin](https://aliaksandrsiarohin.github.io/aliaksandr-siarohin-website/), [Oliver  Woodford](https://ojwoodford.github.io/), [Jian Ren](https://alanspike.github.io/), [Menglei Chai](https://mlchai.com/) and [Sergey Tulyakov](http://www.stulyakov.com/). 
